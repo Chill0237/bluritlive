@@ -11,7 +11,7 @@ proves the *capture → detect → mask → display* loop on a laptop. Stage II 
 the detectors onto the UGen300 NPU so the work never touches the GPU your game
 needs.
 
-**Demo video:** https://youtu.be/YOUR-VIDEO-ID  
+**Demo video:** https://youtu.be/RlCiOQukYGY  
 **Proposal deck:** see the PDF submitted to the league.
 
 ![BlurItLive running: RAW vs PROTECTED with the control bar](docs/screenshot.png)
