@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
+# EasyOCR downloads its models here on first run
+.EasyOCR/
+# your own recorded demo clips / captures
+captures/
+*.mov

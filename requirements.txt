@@ -1,0 +1,15 @@
+# BlurItLive - Stage I prototype dependencies
+# Install with:  pip install -r requirements.txt
+#
+# NOTE on OpenCV: pinned to a known-good 4.x build. Do NOT use opencv-python 5.x
+# (e.g. 5.0.0.93) - that build is missing APIs like CascadeClassifier.
+# Also: EasyOCR pulls in `opencv-python-headless`, which clashes with the full
+# `opencv-python` and can leave a half-broken `cv2` (no GUI / missing symbols).
+# If `import cv2` fails after install, run:
+#     pip uninstall -y opencv-python opencv-python-headless
+#     pip install --no-cache-dir "opencv-python==4.11.0.86"
+
+opencv-python==4.11.0.86   # full build (needed for cv2.imshow windows)
+numpy>=1.24
+mss>=9.0                   # fast screen capture
+easyocr>=1.7               # deep-learning OCR (pulls torch automatically on first install)
